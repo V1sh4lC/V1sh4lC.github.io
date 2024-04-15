@@ -51,3 +51,54 @@ function loop() {
 }
 
 loop();
+
+// import * as THREE from 'three'
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+
+// const scene = new THREE.Scene()
+// const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 1, 500)
+// camera.position.z = 5
+
+// const renderer = new THREE.WebGLRenderer()
+// renderer.setSize(window.innerWidth, window.innerHeight)
+// renderer.setPixelRatio(2)
+// document.body.appendChild(renderer.domElement)
+
+// // const axes = new THREE.AxesHelper(2)
+// // scene.add(axes)
+
+// const controls = new OrbitControls(camera, renderer.domElement)
+// controls.enableDamping = true
+// controls.dampingFactor = 0.03
+// controls.autoRotate = true
+// controls.enablePan = false
+// controls.enableZoom = false
+// scene.add(controls)
+
+// const sphereGeo = new THREE.SphereGeometry(0.75, 60, 60)
+// const sphereMat = new THREE.MeshLambertMaterial({color: 0x00aaff})
+// const sphere = new THREE.Mesh(sphereGeo, sphereMat)
+// scene.add(sphere)
+
+// const spotLight = new THREE.SpotLight(0xffffff, 1)
+// spotLight.position.y = 5
+// spotLight.position.z = 5
+// scene.add(spotLight)
+
+// // const spotHelper = new THREE.SpotLightHelper(spotLight)
+// // scene.add(spotHelper)
+
+// window.addEventListener('resize', () => {
+//     camera.aspect = window.innerWidth/window.innerHeight
+//     camera.updateProjectionMatrix()
+//     renderer.setSize(window.innerWidth, window.innerHeight)
+// })
+
+// let clock = new THREE.Clock()
+// function animate() {
+//     controls.update()
+//     requestAnimationFrame(animate)
+//     renderer.render(scene, camera)
+// }
+
+// animate()
